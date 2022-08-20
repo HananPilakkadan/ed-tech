@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+@font-face {
+    font-family: 'gorditabold';
+    src: url('../fonts/gordita-bold-webfont.woff2') format('woff2'),
+        url('../fonts/gordita-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditalight';
+    src: url('../fonts/gordita-light-webfont.woff2') format('woff2'),
+        url('../fonts/gordita-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditamedium';
+    src: url('../fonts/gordita-medium-webfont.woff2') format('woff2'),
+        url('../fonts/gordita-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'gorditaregular';
+    src: url('../fonts/gordita-regular-webfont.woff2') format('woff2'),
+        url('../fonts/gordita-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'gorditaregular';
+}
