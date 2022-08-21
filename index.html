@@ -5,15 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ed - tech | Platform for e - Learning</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- scripts -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/slick.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- scripts -->
-    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/multi-animated-counter.js"></script>
     <script src="./js/script.js" defer></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="./images/Logo-short.png">
 </head>
 
 <body>
@@ -23,31 +30,240 @@
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#" class="button">Go to Dashboard</a></li>
+                    <li><a href="./pages/login.html" class="button">Go to Dashboard</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="wrapper">
-            <div class="text-container">
+            <div class="text-container" data-aos="fade-right">
                 <h3>The Best Online Course You'll Find.</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quae perspiciatis, iste
                     consequuntur quis mollitia doloremque maiores eaque iusto necessitatibus.</p>
                 <div class="button-box">
-                    <a href="#" class="button active">Get start</a>
+                    <a href="./pages/we.html" class="button active">Get start</a>
                     <a href="#" class="button"><i class="fa-solid fa-play"></i> watch video</a>
                 </div>
                 <ul>
-                    <li><span>10+</span><small>Courses</small></li>
-                    <li><span>10k+</span><small>Users</small></li>
+                    <li id="counters_1">
+                        <div class="num">
+                            <span class="counter" data-TargetNum="10" data-Speed="4000"></span>
+                            <span>+</span>
+                        </div>
+                        <small>Courses</small>
+                    </li>
+                    <li id="counters_1">
+                        <div class="num">
+                            <span class="counter" data-TargetNum="20" data-Speed="4000"></span>
+                            <span>K+</span>
+                        </div>
+                        <small>Users</small>
+                    </li>
                 </ul>
             </div>
-            <div class="img-container">
+            <div class="img-container" data-aos="fade-left">
                 <img src="./images/spotlight.jpg" alt="Spotlight">
             </div>
         </div>
     </main>
+    <section id="menu">
+        <div class="wrapper">
+            <div class="container">
+                <div class="img-box" data-aos="fade-up">
+                    <img src="./images/student.png" alt="Student">
+                </div>
+                <div class="text-box" data-aos="fade-up">
+                    <h3>Providing Amazing Online Courses</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper
+                        mattis, pulvinar dapibus leo.</p>
+                    <div class="button-box" data-aos="fade-up">
+                        <a href="./pages/course.html" class="button active">Get start</a>
+                        <a href="#" class="button"><i class="fa-solid fa-play"></i> watch video</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="experience">
+        <div class="wrapper">
+            <div class="right-box" data-aos="fade-up-right">
+                <h3>Premium Learning Experience</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed tincidunt velit. Donec bibendum
+                    turpis vitae maximus bibendum.</p>
+                <div class="banner">
+                    <div class="text-container">
+                        <h4> Quality online courses for all!</h4>
+                        <a href="#" class="button">Book Slot</a>
+                    </div>
+                    <div class="img-container">
+                        <img src="./images/test.png" alt="Test">
+                    </div>
+                </div>
+            </div>
+            <div class="left-box">
+                <ul>
+                    <li data-aos="fade-up-left">
+                        <div class="preview"><span><i class="fa-solid fa-arrow-pointer"></i></span></div>
+                        <div class="content">
+                            <h4>Online Course from experts</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, aliquid?</p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up-left">
+                        <div class="preview"><span><i class="fa-solid fa-arrow-pointer"></i></span></div>
+                        <div class="content">
+                            <h4>Online Course from experts</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, aliquid?</p>
+                        </div>
+                    </li>
+                    <li data-aos="fade-up-left">
+                        <div class="preview"><span><i class="fa-solid fa-arrow-pointer"></i></span></div>
+                        <div class="content">
+                            <h4>Online Course from experts</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, aliquid?</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="learning">
+        <div class="wrapper">
+            <div class="right-box" data-aos="fade-up">
+                <h3>Experience Interactive Learning</h3>
+                <p>Ut eget mattis lacus, sit amet accumsan erat. Integer suscipit justo vel iaculis scelerisque. Nam vel
+                    porta augue. Proin egestas leo magna, vel tincidunt magna laoreet eu.</p>
+                <ul>
+                    <li>
+                        <h4>Verified</h4>
+                        <p>Ut eget mattis lacus, sit amet accumsan erat.</p>
+                    </li>
+                    <li>
+                        <h4>Verified</h4>
+                        <p>Ut eget mattis lacus, sit amet accumsan erat.</p>
+                    </li>
+                    <li>
+                        <h4>Verified</h4>
+                        <p>Ut eget mattis lacus, sit amet accumsan erat.</p>
+                    </li>
+                    <li>
+                        <h4>Verified</h4>
+                        <p>Ut eget mattis lacus, sit amet accumsan erat.</p>
+                    </li>
+                </ul>
+                <a href="#" class="button">All Feature</a>
+            </div>
+            <div class="left-box">
+                <div class="img-box" data-aos="fade-left">
+                    <img src="./images/feature.png" alt="Feature">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="students">
+        <div class="wrapper">
+            <div class="head" data-aos="fade-up">
+                <h2>What Our Students Say</h2>
+                <p>Ut eget mattis lacus, sit amet accumsan erat. Integer suscipit justo vel iaculis scelerisque. Nam vel
+                    porta augue. Proin egestas leo magna, vel tincidunt magna laoreet eu.</p>
+            </div>
+            <ul class="responsive" data-aos="fade-up">
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam dignissimos sit, hic
+                        blanditiis rerum?</p>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="./images/student.jpg" alt="Student">
+                        </div>
+                        <div class="name">
+                            <h4>Nik Adalman</h4>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam dignissimos sit, hic
+                        blanditiis rerum?</p>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="./images/student.jpg" alt="Student">
+                        </div>
+                        <div class="name">
+                            <h4>Nik Adalman</h4>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam dignissimos sit, hic
+                        blanditiis rerum?</p>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="./images/student.jpg" alt="Student">
+                        </div>
+                        <div class="name">
+                            <h4>Nik Adalman</h4>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae aliquam dignissimos sit, hic
+                        blanditiis rerum?</p>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="./images/student.jpg" alt="Student">
+                        </div>
+                        <div class="name">
+                            <h4>Nik Adalman</h4>
+                            <span>Student</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="wrapper">
+            <div class="logo-box">
+                <h1><a href="index.html"><img src="./images/Logo.jpg" alt="Logo"></a></h1>
+                <p>Lorem ipsum dolor sit amet, consec tetur adipiscing elit</p>
+                <ul class="social">
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="address item">
+                <h3>Our Address</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-location-dot"></i> 1st floor Kochi 676767</a></li>
+                    <li><a href="tel:"><i class="fa-solid fa-phone"></i> +91 999 9999 999</a></li>
+                    <li><a href="mailto:"><i class="fa-solid fa-envelope"></i> hello@example.com</a></li>
+                </ul>
+            </div>
+            <div class="links item">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="tel:">Get start</a></li>
+                    <li><a href="mailto:">About</a></li>
+                </ul>
+            </div>
+            <div class="contact-form ">
+                <h3>Get updates on your mail</h3>
+                <form action="">
+                    <input type="email" placeholder="Enter your e-mail" required>
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </div>
+        <div class="copy">
+            &copy; all right reserved 2022
+        </div>
+
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat | Ed - tech</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- scripts -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../js/multi-animated-counter.js"></script>
+    <script src="../js/script.js" defer></script>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" href="../images/Logo-short.png">
+</head>
+
+<body>
+    <section id="dashboard">
+        <div class="wrapper-box">
+            <div class="side-bar">
+                <div class="top-box">
+                    <div class="logo">
+                        <img src="../images/Logo-short.png" alt="Logo">
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="dashboard.html"><i class="fa-solid fa-border-all"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-book"></i> Learning</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-person-walking"></i> Practice</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-tv"></i> Workshop</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-file-pen"></i> Assessment</a>
+                        </li>
+                        <li class="active">
+                            <a href="chat.html"><i class="fa-solid fa-comments"></i> Chat</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa-solid fa-file-circle-check"></i> Certificate</a>
+                        </li>
+                        <li>
+                            <a href="game.html" target="_blank"><i class="fa-solid fa-gamepad"></i> Game</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bottom-box">
+                    <div class="img-box">
+                        <img src="../images/vector.png" alt="Vector">
+                    </div>
+                    <a href="#" class="button">Upgrade Now</a>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="header">
+                    <div class="left-box">
+                        <h3>Chat Box</h3>
+                        <form action="">
+                            <input type="text" placeholder="Search..">
+                            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </form>
+                    </div>
+                    <div class="right-box">
+                        <span class="icon" id="notification-icon"><i class="fa-solid fa-bell"></i></span>
+                        <div class="notification">
+                            <ul>
+                                <li>
+                                    <span><i class="fa-solid fa-hourglass-end"></i></span>
+                                    <p>Today we sheduled a assesment in last your skill</p>
+                                </li>
+                                <li>
+                                    <span><i class="fa-solid fa-hourglass-end"></i></span>
+                                    <p>Congrats Mariya! you completed Graphic Designing</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="user">
+                            <img src="../images/student.jpg" alt="Student">
+                            <span>Mariya</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-box">
+                    <div class="chat-wrapper">
+                        <div class="contacts">
+                            <ul>
+                                <li class="active">
+                                    <div class="profile">
+                                        <img src="../images/student.jpg" alt="User">
+                                    </div>
+                                    <div class="info">
+                                        <span>Jane</span>
+                                        <small>New Message</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile">
+                                        <img src="../images/alexander.jpg" alt="User">
+                                    </div>
+                                    <div class="info">
+                                        <span>Alexander</span>
+                                        <small>Sent a Message</small>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="profile">
+                                        <img src="../images/alex.jpg" alt="User">
+                                    </div>
+                                    <div class="info">
+                                        <span>Alex John</span>
+                                        <small>sent a image</small>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chat-area">
+                            <div class="head">
+                                <div class="name">
+                                    <span>Jane</span>
+                                    <small>Online</small>
+                                </div>
+                                <div class="contact">
+                                    <span><i class="fa-solid fa-phone"></i></span>
+                                    <span><i class="fa-solid fa-video"></i></span>
+                                </div>
+                            </div>
+                            <div class="chatting-box">
+                                <form action="" class="user-tab">
+                                    <input type="text" placeholder="enter your messages..." />
+                                    <span><input type="file" /><i class="fa-solid fa-paperclip"></i></span>
+                                    <span class="send"><i class="fa-solid fa-paper-plane"></i></span>
+                                </form>
+                                <div class="chat-history">
+                                    <span>Hello</span>
+                                    <span class="received">
+                                        hey
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
